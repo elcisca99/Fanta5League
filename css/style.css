@@ -1,0 +1,222 @@
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+/* PAGINA HOME */
+.home-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.welcome-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    border-color: black;
+}
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.flex-item table {
+  width: 350px;  /* più largo perché ci sono 12 colonne */
+  border-collapse: collapse;
+}
+
+.flex-item table th,
+.flex-item table td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.flex-item h2 {
+  text-align: center;
+}
+
+.sorteggio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.tabella-sorteggio {
+    flex: 1 1 48%;
+    min-width: 500px;
+}
+
+.calendario {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.calendario th, .calendario td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.calendario th {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonne */
+    gap: 25px;
+    padding: 20px;
+}
+
+.results-table {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
+}
+
+.results-table h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table th {
+    background: #eaeaea;
+    padding: 8px;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+}
+
+table td {
+    border-bottom: 1px solid #ddd;
+    padding: 6px 4px;
+    text-align: center;
+}
+
+/* Righe leggermente alternate */
+table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Responsive: su mobile passa a 1 colonna */
+@media (max-width: 900px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.classifica-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+/* header */
+.classifica-table thead {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.classifica-table th,
+.classifica-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* righe alternate */
+.classifica-table tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* hover */
+.classifica-table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+/* colonna squadra più larga */
+.classifica-table td:nth-child(2),
+.classifica-table th:nth-child(2) {
+    text-align: left;
+    padding-left: 20px;
+    width: 25%;
+}
